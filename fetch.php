@@ -14,7 +14,7 @@ for ($i = 0; $i < 11; $i++){
       CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
       CURLOPT_CUSTOMREQUEST => 'GET',
       CURLOPT_HTTPHEADER => array(
-      'x-wg-api-key: bee91269c9c29e898d473bf285284ff1'
+      'x-wg-api-key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
       ),
     ));
     
