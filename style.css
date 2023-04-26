@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Broken Console';
+  src: url('fonts/BrokenConsoleRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Broken Console Bold';
+  src: url('fonts/BrokenConsoleBold.woff2') format('woff2');
+}
+
+html{
+    background-color: black;
+    font-family: 'Broken Console';
+}
+
+body{
+    margin: 20px;
+}
+
+h1{
+    color: #b11c18;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+h4{
+    margin: 0;
+    padding-top: 5px;
+    font-size: 0.7rem;
+}
+
+#main{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #24d336;
+}
+
+#mainData{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 0;
+    flex-wrap: wrap;
+}
+
+.header{
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.header img{
+    max-width: 30px;
+    padding: 0 10px;
+}
+
+.filter{
+    margin-bottom: 20px;
+}
+
+.filter a{
+    padding: 5px 10px;
+}
+
+.filter a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.filter h6{
+    font-size: 1rem;
+    color: #b11c18;
+    padding-right: 10px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.community, .rank{
+    width: 15%;
+}
+
+.community a{
+  text-decoration: none;
+  color: #24d336;
+}
+
+.community a:hover{
+  text-decoration: underline;
+}
+
+.landid, .type, .fee{
+    width: 23.33%;
+}
+
+.colHeader{
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: 'Broken Console Bold';
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+}
+
+footer h6{
+    color: #b11c18;
+}
+
+footer a{
+    color: #b11c18;
+    font-family: 'Martian Mono';
+}
+
+@media screen and (max-width: 600px){
+    .row{
+        font-size: 0.7rem;
+    }
+
+    .header img{
+        display: none;
+    }
+
+    .colHeader{
+        font-size: 1rem;
+    }
+}

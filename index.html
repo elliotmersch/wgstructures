@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Expires" CONTENT="0">
+        <link rel="icon" type="image/x-icon" href="/images/land.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap" rel="stylesheet">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-957HBCRYTZ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-957HBCRYTZ');
+        </script>
+        <script src="./fetch.js"></script>
+        <script>
+            getWG();
+        </script>
+        <title>WG Structures</title>
+
+    </head>
+    <body>
+        <!--
+        <div style="height: 100vh; width: 100%; z-index: 999; color: white; display: flex; align-items: center; justify-content: center">
+            I'm doing maintenance, check back in an hour or so
+        </div>
+        -->
+        <div id="main">
+            <div class="row header">
+                <h1><img src="images/wolf.png" />Wolf Game Structures<img src="images/sheep.png" /></h1>
+                <h4 id="updated"></h4>
+            </div>
+            <div class="row filter">
+                <h6>Filter By: </h6><a onclick="filterStrucs('BARN')">Barn</a><a onclick="filterStrucs('BATHHOUSESHEEP')">Bath (Sheep)</a><a onclick="filterStrucs('BATHHOUSEWOLF')">Bath (Wolf)</a><a onclick="filterStrucs('DEN')">Den</a>
+            </div>
+            <div class="row">
+                <div class="col community colHeader">C#</div>
+                <div class="col landid colHeader">Land</div>
+                <div class="col type colHeader">Type</div>
+                <div class="col fee colHeader">Fee</div>
+                <div class="col rank colHeader">Opened</div>
+            </div>
+            <div id="mainData">
+                &nbsp;
+            </div>
+        </div>
+    </body>
+    <footer>
+        <h6>Made by <a href="https://twitter.com/elli0t_eth" target="_blank">elli0t.eth</a></h6>
+    </footer>
+</html>
